@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section>
+        <h1>scroll page</h1>
+    </section>
+    <section>
+        <div class="container appear">
+            <h2>your title</h2>
+            <div class="cards">
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container appear">
+            <h2>your title</h2>
+            <div class="cards">
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container appear">
+            <h2>your title</h2>
+            <div class="cards">
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ipsa exercitationem voluptatibus odit doloribus labore aliquam tenetur temporibus officiis voluptate assumenda quidem vitae repudiandae officia animi, quia, fugit harum
+                        maiores.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener("scroll", function() {
+            let appears = document.querySelectorAll('.appear');
+            for (i = 0; i < appears.length; i++) {
+                let windowHeight = window.innerHeight;
+                let appearTop = appears[i].getBoundingClientRect().top;
+                let appearPoint = 150;
+                if (appearTop < windowHeight - appearPoint) {
+                    appears[i].classList.add('active');
+                } else {
+                    appears[i].classList.remove('active');
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
